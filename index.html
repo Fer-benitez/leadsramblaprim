@@ -411,7 +411,9 @@
           pisoInteres: PISO_NOMBRE,
           presentacion: document.getElementById('presentacion').value.trim(),
           trabajo: document.getElementById('trabajo').value.trim(),
-          disponibilidad: disponibilidad
+          disponibilidad: disponibilidad,
+          consentimientoRgpd: 'Sí',
+          fechaConsentimiento: new Date().toLocaleString('es-ES')
         })
       });
       document.getElementById('thanksOverlay').classList.add('show');
